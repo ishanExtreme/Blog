@@ -102,12 +102,12 @@ if 'TRAVIS' in os.environ:
     }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'blog_db',
         'USER':'postgres',
         'PASSWORD':'Ishan@Extreme',
         'HOST':'localhost',
-        'PORT':'5432',
+        'PORT':'',
     }
 }
 CKEDITOR_BROWSE_SHOW_DIRS = True
