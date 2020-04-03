@@ -225,6 +225,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 MEDIA_URL = '/media/'
 CKEDITOR_UPLOAD_PATH = "uploads/"
+
+import dj_database_url 
+
+prod_db  =  dj_database_url.config(conn_max_age=500)
+
+DATABASES['default'].update(prod_db)
 # CLOUDINARY_STORAGE = {
 #     'CLOUD_NAME': 'hspyd41zn',
 #     'API_KEY': '145473915355966',
