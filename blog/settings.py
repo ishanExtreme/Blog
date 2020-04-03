@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    # 'cloudinary_storage',
+    'cloudinary_storage',
     'django.contrib.staticfiles',
     'blogs.apps.BlogsConfig',
     'taggit',
@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'django.contrib.sitemaps',
     'django.contrib.postgres',
-    # 'cloudinary',
+    'cloudinary',
 
     
     
@@ -231,9 +231,9 @@ import dj_database_url
 prod_db  =  dj_database_url.config(conn_max_age=500)
 
 DATABASES['default'].update(prod_db)
-# CLOUDINARY_STORAGE = {
-#     'CLOUD_NAME': 'hspyd41zn',
-#     'API_KEY': '145473915355966',
-#     'API_SECRET': 'AhRrOKgcRxHgxqBQN27xRNfDOoE',
-# }
-# DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'hpnnuapbc',
+    'API_KEY': '546389312195593',
+    'API_SECRET': 'DWXj5o52RqeXpRAdRmhnKhtJ60c',
+}
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
