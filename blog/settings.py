@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '#68eib0erwqw6hn9%djbmdkh6rlw+fn-y(tsh*+4o407tvn&y@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['extremeblog.herokuapp.com','ishanmishra.codes','www.ishanmishra.codes']
 
