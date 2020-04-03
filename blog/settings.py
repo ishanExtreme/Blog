@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'cloudinary_storage',
+    # 'cloudinary_storage',
     'django.contrib.staticfiles',
     'blogs.apps.BlogsConfig',
     'taggit',
@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'django.contrib.sitemaps',
     'django.contrib.postgres',
-    'cloudinary',
+    # 'cloudinary',
 
     
     
@@ -225,9 +225,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 MEDIA_URL = '/media/'
 CKEDITOR_UPLOAD_PATH = "uploads/"
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'hspyd41zn',
-    'API_KEY': '145473915355966',
-    'API_SECRET': 'AhRrOKgcRxHgxqBQN27xRNfDOoE',
-}
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+# CLOUDINARY_STORAGE = {
+#     'CLOUD_NAME': 'hspyd41zn',
+#     'API_KEY': '145473915355966',
+#     'API_SECRET': 'AhRrOKgcRxHgxqBQN27xRNfDOoE',
+# }
+# DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
