@@ -25,7 +25,7 @@ SECRET_KEY = '#68eib0erwqw6hn9%djbmdkh6rlw+fn-y(tsh*+4o407tvn&y@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['extremeblog.herokuapp.com']
 
 SITE_ID = 1
 # Application definition
