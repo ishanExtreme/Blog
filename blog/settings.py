@@ -26,7 +26,6 @@ SECRET_KEY = '#68eib0erwqw6hn9%djbmdkh6rlw+fn-y(tsh*+4o407tvn&y@'
 DEBUG = True
 
 ALLOWED_HOSTS = ['extremeblog.herokuapp.com','ishanmishra.codes','www.ishanmishra.codes']
-
 SITE_ID = 1
 # Application definition
 
