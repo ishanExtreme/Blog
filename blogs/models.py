@@ -58,7 +58,9 @@ class Comment(models.Model):
     active = models.BooleanField(default=True)
 
     def date(self):
-        return self.created.strftime("%B %d, %Y at %I:%M%p")
+        hour = int(self.created.strftime("%I"))+5
+        minute = int(self.created.strftime("%M"))+30
+        return self.created.strftime(f"%B %d, %Y at {hour}:{minute}%p")#%B %d, %Y at %I:%M%p"
     class Meta:
         ordering = ('created',)
     def __str__(self):
