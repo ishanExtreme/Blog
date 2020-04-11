@@ -1,8 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render,HttpResponseRedirect
 from .models import Blogs,Comment
 from django.core.paginator import Paginator,EmptyPage,PageNotAnInteger
 from django.shortcuts import get_object_or_404
-
+from django.urls import reverse
 from taggit.models import Tag
 from django.db.models import Count
 
@@ -52,6 +52,8 @@ def detail(request,year,month,day,post):
        new_comment.body = request.POST['body'] 
        new_comment.post = post
        new_comment.save()
+      
+       return HttpResponseRedirect(post.get_absolute_url())
     post_tags_ids = post.tags.values_list('id',flat = True)
     similar_posts = Blogs.published.filter(tags__in=post_tags_ids).exclude(id=post.id)
     similar_posts = similar_posts.annotate(same_tags=Count('tags')).order_by('-same_tags','-publish')[:4]
