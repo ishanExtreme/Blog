@@ -8,10 +8,10 @@ Dynamic personal blogging site using django
   
 # Images
 
-<img src="./img1.png" width="500" height ="300"/>
+<img src="https://github.com/noobDevelopers/Blog/blob/master/img1.png" width="500" height ="300"/>
 
 
-<img src="./img2.png" width="500" height ="300"/>
+<img src="https://github.com/noobDevelopers/Blog/blob/master/img2.png" width="500" height ="300"/>
   
 
 
